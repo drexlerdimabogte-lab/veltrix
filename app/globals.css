@@ -101,7 +101,9 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 /* ====================== HERO ====================== */
 .hero { position: relative; min-height: 100vh; min-height: 100svh; overflow: hidden; display: flex; align-items: stretch; }
 .hero-grid { width: 100%; grid-template-rows: auto 1fr auto auto; padding-top: 96px; padding-bottom: 28px; row-gap: 0; }
-.hero-object { position: absolute; z-index: 0; right: -14vw; top: 6%; width: 64vw; height: 78%; }
+.hero-object { position: absolute; z-index: 3; right: -8vw; top: 4%; width: 62vw; height: 84%; pointer-events: none; }
+.globe-hit { position: absolute; left: 50%; top: 50%; width: min(46vw, 62vh); aspect-ratio: 1; transform: translate(-50%, -50%); border-radius: 50%; pointer-events: auto; cursor: grab; touch-action: pan-y; }
+.globe-hit:active { cursor: grabbing; }
 .hero-canvas { position: absolute; inset: 0; }
 .h-fig { position: absolute; left: 22%; top: 3%; color: var(--dim); font-size: 9px; }
 .h-anno { display: flex; flex-direction: column; gap: 0; position: relative; z-index: 2; font-size: 10px; line-height: 1.9; }
@@ -305,7 +307,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   .display-2 { font-size: clamp(36px, 10.4vw, 60px); }
 
   .hero-grid { padding-top: 80px; padding-bottom: 20px; }
-  .hero-object { right: -38vw; top: 13%; width: 112vw; height: 46%; }
+  .hero-object { right: -24vw; top: 13%; width: 112vw; height: 46%; }
   .h-fig { left: 10%; bottom: 4%; }
   .h-anno-l { grid-column: 1 / span 3; } .h-anno-r { display: none; }
   .hero-type { font-size: 8.7vw; line-height: .9; margin-bottom: 22px; }
@@ -376,7 +378,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 @media (max-width: 767px) {
   .hero { min-height: 0; }
   .hero-grid { grid-template-rows: auto auto auto auto; padding-top: 76px; padding-bottom: 36px; }
-  .hero-object { top: 64px; height: 44vh; height: 44svh; right: -34vw; width: 104vw; opacity: .9; }
+  .hero-object { top: 64px; height: 44vh; height: 44svh; right: -22vw; width: 104vw; opacity: .9; }
   .hero-type { align-self: start; margin-top: calc(31vh - 40px); margin-top: calc(31svh - 40px); }
 }
 

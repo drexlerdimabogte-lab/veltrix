@@ -157,3 +157,7 @@ Notes: `next.config.ts` uses `output: "export"`, `trailingSlash: true` and unopt
 
 ### V3.2 update: GitHub Pages
 - Static export config, `withBase` helper, `.nojekyll`, Pages workflow and `.gitignore`.
+
+### V3.2 update: hero globe
+- The hero 3D is now a globe (`components/NeuralCanvas.tsx`): a dotted surface, a lat/long grid, a red fresnel glow around the edge, two rings with pulses moving along them, arcs on the surface with pulses, satellites and lighter dust. It fades and scales in, and the rings draw on entrance.
+- The globe sits in front of the headline (z-index 3) on the right side. The canvas itself doesn't catch clicks; only a round area over the globe responds to the pointer. Hovering speeds up the spin and tilts the globe toward the cursor. Drag to spin, with inertia (horizontal drag on touch). Reduced motion shows a still frame.

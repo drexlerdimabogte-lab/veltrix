@@ -32,7 +32,7 @@ export default function Hero() {
     <section id="top" className="hero" ref={root}>
       <div className="hero-object" aria-hidden>
         <NeuralCanvas />
-        <span className="h-fig mono">FIG. 00 — NEURAL FIELD · MOVE CURSOR</span>
+        <span className="h-fig mono">FIG. 00 — NEURAL GLOBE · HOVER / DRAG</span>
       </div>
 
       <div className="grid hero-grid">
